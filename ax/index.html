@@ -427,7 +427,14 @@ a {line-height: 100% !important;}
          
 
 <!-- Scripts -->      
-    
+
+<script>
+var beepOne = $("#beep-one")[0];
+$("#nav-one a")
+.mouseenter(function() {
+beepOne.play();
+});
+</script>
            
 <script>
 document.fonts.ready.then( function() {
@@ -562,14 +569,6 @@ if(navigator.appName.indexOf("Internet Explorer")!=-1 || navigator.userAgent.mat
 {
    window.location = "explorer.html";
 }
-</script>
-
-<script>
-var beepOne = $("#beep-one")[0];
-$("#nav-one a")
-.mouseenter(function() {
-beepOne.play();
-});
 </script>
 
 <script>
